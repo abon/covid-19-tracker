@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+}
+
+/*#545B60*/
+
+body {
+  background-color: #545b60;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: "center";
+  margin-bottom: 20px;
+}
+
+.app__left {
+  flex: 0.9;
+}
+.app__newCases {
+  background-color: lightgoldenrodyellow;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.app__graph {
+  flex-grow: 1;
+  background-color: lightcyan;
+  display: flex;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
