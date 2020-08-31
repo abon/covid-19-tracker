@@ -11,13 +11,13 @@ import numeral from "numeral";
 import "./App.css";
 import "leaflet/dist/leaflet.css";
 
+import Navbar from "./Navbar";
 import InfoBox from "./InfoBox";
+import QuickFactsBox from "./components/QuickFactsBox/QuickFactsBox";
 import Map from "./Map";
 import Table from "./Table";
 import LineGraph from "./LineGraph";
 import { sortData, prettyPrintStat } from "./util";
-
-import Navbar from "./Navbar";
 
 // const API_URL = "https://disease.sh/v3/covid-19/countries";
 
@@ -81,16 +81,15 @@ function App() {
       });
   };
 
-  console.log(countryInfo);
-
   return (
     <div>
       <Navbar />
       <div className="app">
         <div className="app__left">
           <div className="app__header">
-            <h4>COVID-19 TRACKER</h4>
-            <FormControl
+            <QuickFactsBox countryInfo={countryInfo} countries={countries} />
+
+            {/* <FormControl
               className="app__dropdown"
               style={{ backgroundColor: "#F8EDF0" }}
             >
@@ -106,9 +105,9 @@ function App() {
                   </MenuItem>
                 ))}
               </Select>
-            </FormControl>
+            </FormControl> */}
           </div>
-          <div className="app__stats">
+          {/* <div className="app__stats">
             <InfoBox
               onClick={(e) => setCasesType("cases")}
               title="Coronavirus Cases"
@@ -138,9 +137,9 @@ function App() {
             casesType={casesType}
             center={mapCenter}
             zoom={mapZoom}
-          />
+          /> */}
         </div>
-        <Card className="app__right">
+        {/* <Card className="app__right">
           <CardContent>
             <div className="app__information">
               <h3>Live Cases by Country</h3>
@@ -149,7 +148,7 @@ function App() {
               <LineGraph casesType={casesType} />
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
     </div>
   );

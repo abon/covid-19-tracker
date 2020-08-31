@@ -10,7 +10,6 @@ body {
 
 .app {
   display: flex;
-  justify-content: space-evenly;
   padding: 20px;
 }
 
@@ -21,19 +20,10 @@ body {
   margin-bottom: 20px;
 }
 
-.app__left {
-  flex: 0.9;
-}
 .app__newCases {
   background-color: lightgoldenrodyellow;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.app__graph {
-  flex-grow: 1;
-  background-color: lightcyan;
-  display: flex;
 }
 
 .app__stats {
