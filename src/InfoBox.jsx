@@ -6,6 +6,7 @@ import { Card, CardContent, Typography } from "@material-ui/core";
 function InfoBox({ cases, title, isRed, active, total, ...props }) {
     return (
         <Card
+            style={{ backgroundColor: '#445175' }}
             onClick={props.onClick}
             className={`infoBox ${active && "infoBox--selected"} ${
                 isRed && "infoBox--red"

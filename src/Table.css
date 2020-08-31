@@ -1,4 +1,4 @@
-.table {
+.table__country {
   margin-top: 20px;
   overflow: scroll;
   overflow-x: hidden;
@@ -6,15 +6,30 @@
   color: #292a2c;
 }
 
-.table tr {
+.table__country tr {
   display: flex;
   justify-content: space-between;
 }
 
-.table td {
+.table__country td {
   padding: 0.5rem;
 }
 
-.table > tr:nth-of-type(odd) {
+.table__country > tr:nth-of-type(odd) {
   background-color: #fbeb9f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar {
+  border: 7px solid lightslategrey;
+  box-shadow: inset 0 0 2.5px 2px rgb(100, 93, 93);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #445175;
+  border-radius: 1px;
+  width: 3px;
 }
