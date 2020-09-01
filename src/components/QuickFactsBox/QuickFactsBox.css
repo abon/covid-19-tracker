@@ -1,17 +1,19 @@
 .factBox {
-  background-color: #445175;
+  background-color: #f4f6ff;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   border-radius: 32px 32px 32px 32px;
   -moz-border-radius: 32px 32px 32px 32px;
   -webkit-border-radius: 32px 32px 32px 32px;
-  border: 0px solid #918591;
+  -webkit-box-shadow: 1px 2px 9px 0px rgba(186, 186, 186, 1);
+  -moz-box-shadow: 1px 2px 9px 0px rgba(186, 186, 186, 1);
+  box-shadow: 1px 2px 9px 0px rgba(186, 186, 186, 1);
 }
 
 .factBox__headline {
   text-align: center;
-  color: aliceblue;
-  font-size: 50px;
+  color: #325879;
+  font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,7 +21,7 @@
   font-size: 15px;
   font-weight: lighter;
   font-style: italic;
-  color: blanchedalmond;
+  color: #525252;
 }
 
 .factBox__cases {
@@ -27,7 +29,7 @@
 }
 
 .cases__data {
-  color: #ff7e67;
+  color: #f8615a;
   font-weight: bolder;
   font-size: 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -35,7 +37,7 @@
 }
 
 .cases {
-  color: #f5f5f5;
+  color: #525252;
   margin-top: -5px;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -54,7 +56,7 @@
 }
 
 .recovered {
-  color: #f5f5f5;
+  color: #525252;
   margin-top: -5px;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -65,7 +67,7 @@
 }
 
 .deaths__data {
-  color: #ea5455;
+  color: #f8bd7f;
   font-weight: bolder;
   font-size: 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -73,7 +75,7 @@
 }
 
 .deaths {
-  color: #f5f5f5;
+  color: #525252;
   margin-top: -5px;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -92,7 +94,7 @@
 }
 
 .active {
-  color: #f5f5f5;
+  color: #525252;
   margin-top: -5px;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -111,7 +113,7 @@
 }
 
 .critical {
-  color: #f5f5f5;
+  color: #525252;
   margin-top: -5px;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

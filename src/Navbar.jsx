@@ -7,7 +7,7 @@ import logoText from './assets/img/logoText.svg';
 function Navbar() {
     return (
 
-        <nav id="header" className="w-full z-30 top-10 py-1 bg-black shadow-lg border-b border-gray-800 ">
+        <nav id="header" className="w-full z-30 top-10 py-1 border-white  text-black">
             <div className="w-full flex items-center justify-between mt-0 px-6 py-2">
                 <label for="menu-toggle" class="cursor-pointer md:hidden block">
                     <svg className="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">

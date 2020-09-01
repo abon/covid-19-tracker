@@ -5,7 +5,7 @@
 /*#545B60*/
 
 body {
-  background-color: #3d486c;
+  background-color: #ebf0f6;
 }
 
 .app {
@@ -13,22 +13,13 @@ body {
   padding: 20px;
 }
 
-.app__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: "center";
-  margin-bottom: 20px;
+.app__left {
+  flex: 0.1;
 }
 
-.app__newCases {
-  background-color: lightgoldenrodyellow;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.app__stats {
-  display: flex;
-  justify-content: space-between;
+.app__right {
+  flex: 0.9;
+  padding-left: 30px;
 }
 
 @media (max-width: 990px) {
