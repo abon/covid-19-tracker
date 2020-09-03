@@ -7,7 +7,7 @@ import logoText from './assets/img/logoText.svg';
 function Navbar() {
     return (
 
-        <nav id="header" className="w-full z-30 top-10 py-1 border-white  text-black">
+        <nav id="header" className="w-full z-30 top-10 py-1 border-white ">
             <div className="w-full flex items-center justify-between mt-0 px-6 py-2">
                 <label for="menu-toggle" class="cursor-pointer md:hidden block">
                     <svg className="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -25,11 +25,11 @@ function Navbar() {
                     </div>
 
                     <nav>
-                        <ul className="md:flex  justify-between text-base text-blue-600 pt-4 md:pt-0 pl-3">
-                            <li><a className="inline-block rounded-md no-underline font-medium text-xl py-2 px-5 lg:-ml-2 text-white  focus:outline-none hover:text-gray-400 focus:text-black focus:bg-gray-100 transition duration-150 ease-in-out" href="/#">Data</a></li>
-                            <li><a className="inline-block rounded-md no-underline font-medium  text-xl  py-2 px-5 lg:-ml-2 text-white  focus:outline-none hover:text-gray-400 focus:text-black focus:bg-gray-100 transition duration-150 ease-in-out" href="/#">Map</a></li>
-                            <li><a className="inline-block rounded-md no-underline font-medium  text-xl  py-2 px-5 lg:-ml-2 text-white  focus:outline-none focus:text-black focus:bg-gray-100 hover:text-gray-400 transition duration-150 ease-in-out" href="/#">Wiki</a></li>
-                            <li><a className="inline-block rounded-md no-underline font-medium  text-xl  py-2 px-5 lg:-ml-2 text-white  focus:outline-none focus:text-black focus:bg-gray-100 hover:text-gray-400 transition  duration-150 ease-in-out" href="/#">About</a></li>
+                        <ul className="md:flex  justify-between pt-4 md:pt-0 pl-3">
+                            <li><a className="inline-block rounded-md no-underline font-medium text-xl py-2 px-5 lg:-ml-2   focus:outline-none hover:text-gray-400 focus:text-black focus:bg-gray-100 transition duration-150 ease-in-out" href="/#">Data</a></li>
+                            <li><a className="inline-block rounded-md no-underline font-medium  text-xl  py-2 px-5 lg:-ml-2   focus:outline-none hover:text-gray-400 focus:text-black focus:bg-gray-100 transition duration-150 ease-in-out" href="/#">Map</a></li>
+                            <li><a className="inline-block rounded-md no-underline font-medium  text-xl  py-2 px-5 lg:-ml-2   focus:outline-none focus:text-black focus:bg-gray-100 hover:text-gray-400 transition duration-150 ease-in-out" href="/#">Wiki</a></li>
+                            <li><a className="inline-block rounded-md no-underline font-medium  text-xl  py-2 px-5 lg:-ml-2   focus:outline-none focus:text-black focus:bg-gray-100 hover:text-gray-400 transition  duration-150 ease-in-out" href="/#">About</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -11,7 +11,7 @@ import numeral from "numeral";
 import "./App.css";
 import "leaflet/dist/leaflet.css";
 
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import InfoBox from "./InfoBox";
 import Map from "./Map";
 import Table from "./Table";
@@ -84,7 +84,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="app">
         <div className="app__left">
           <div className="app__facts">
@@ -93,7 +93,7 @@ function App() {
           </div>
         </div>
         <div className="app__right">
-          <WorldwideData countries={tableData} />
+          <WorldwideData />
         </div>
       </div>
     </div>
