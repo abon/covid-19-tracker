@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import MaterialTable from 'material-table';
 
+
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-const API_URL = 'https://disease.sh/v3/covid-19/states'
+const API_URL = 'https://disease.sh/v3/covid-19/states';
 
 function USData() {
 
@@ -20,12 +21,8 @@ function USData() {
                     recovered: us.recovered,
                     active: us.active,
                     deaths: us.deaths,
-
-
-
                 }))
                 setUsData(data)
-                console.log(data);
             })
     }, [])
 
@@ -51,6 +48,7 @@ function USData() {
                             fontFamily: "arial",
 
                         }
+
                     },
                     {
                         title: 'Cases', field: 'cases',

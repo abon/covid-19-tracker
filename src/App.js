@@ -20,6 +20,12 @@ import QuickFactsBox from "./components/QuickFactsBox/QuickFactsBox";
 import WorldwideData from "./components/Tables/WorldwideData";
 import UzbekistanInfo from "./components/Tables/UzbData/UzbekistanData";
 import USData from "./components/Tables/USData";
+import AsiaData from "./components/Tables/AsiaData";
+import NorthAmericaData from "./components/Tables/NorthAmericaData";
+import SouthAmericaData from "./components/Tables/SouthAmericaData";
+import AfricaData from "./components/Tables/AfricaData";
+import EuropeData from "./components/Tables/EuropeData";
+import AustraliaData from "./components/Tables/AustraliaData";
 import { sortData, prettyPrintStat } from "./util";
 
 // const API_URL = "https://disease.sh/v3/covid-19/countries";
@@ -100,6 +106,12 @@ function App() {
           <WorldwideData />
           <UzbekistanInfo />
           <USData />
+          <AsiaData />
+          <EuropeData />
+          <AustraliaData />
+          <NorthAmericaData />
+          <SouthAmericaData />
+          <AfricaData />
         </div>
       </div>
     </div>

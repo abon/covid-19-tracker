@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import numeral from 'numeral';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -11,12 +11,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
 
-import './UzbekistanData.css';
+const API_URL = 'https://disease.sh/v3/covid-19/continents/Australia%2FOceania?strict=true'
 
-const API_URL = 'https://disease.sh/v3/covid-19/countries/uzbekistan?strict=true'
-const IMG_URL = 'https://disease.sh/assets/img/flags/uz.png'
 
-function UzbekistanData() {
+function AsiaData() {
 
     const [data, setData] = useState([]);
 
@@ -31,9 +29,8 @@ function UzbekistanData() {
     return (
         <TableContainer className='table__container' component={Paper}>
             <Toolbar className='table__toolbar'>
-                <img src={IMG_URL} style={{ height: 20, width: 30, paddingRight: 10 }} alt="" />
                 <Typography className='toolbar__header' >
-                    Uzbekistan COVID-19 Statistics
+                    Australia/Oceania COVID-19 Statistics
                 </Typography>
             </Toolbar>
             <Table className="table" aria-label="simple table">
@@ -49,7 +46,7 @@ function UzbekistanData() {
                 </TableHead>
                 <TableBody className='table__body'>
                     <TableCell className='cell__country'>
-                        {data.country}
+                        {data.continent}
                     </TableCell >
                     <TableCell className='cell__cases' >
                         {numeral(data.cases).format("0,0")}
@@ -73,4 +70,4 @@ function UzbekistanData() {
     )
 }
 
-export default UzbekistanData
+export default AsiaData
