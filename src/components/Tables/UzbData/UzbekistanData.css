@@ -1,0 +1,68 @@
+.table__container {
+  margin-top: 30px;
+  background-color: #f4f6ff !important;
+  border-radius: 14px 14px 14px 14px !important;
+  -moz-border-radius: 14px 14px 14px 14px !important;
+  -webkit-border-radius: 14px 14px 14px 14px !important;
+}
+
+.toolbar__header {
+  font-size: 20px !important;
+  color: #27496d;
+  font-family: Roboto, Helvetica, Arial, sans-serif !important;
+  line-height: 32px !important;
+}
+
+.table__head {
+  background-color: #d6e0f0;
+}
+
+.table__row {
+  color: #0f4c75 !important;
+}
+
+.table__cell {
+  color: #0f4c75 !important;
+  font-size: 12px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: bolder !important;
+}
+
+.table__body {
+  background-color: #ebf0f6 !important;
+}
+
+.cell__country {
+  font-size: 20px !important;
+  color: #0f4c75 !important;
+}
+
+.cell__cases {
+  color: #f8615a !important;
+  font-weight: bolder !important;
+  font-size: 15px !important;
+}
+
+.cell__recovered {
+  color: #00b8a9 !important;
+  font-weight: bolder !important;
+  font-size: 15px !important;
+}
+
+.cell__active {
+  color: #ffb400 !important;
+  font-weight: bolder !important;
+  font-size: 15px !important;
+}
+
+.cell__deaths {
+  color: #d72323 !important;
+  font-weight: bolder !important;
+  font-size: 15px !important;
+}
+
+.cell__critical {
+  color: #f4a71d !important;
+  font-weight: bolder !important;
+  font-size: 15px !important;
+}

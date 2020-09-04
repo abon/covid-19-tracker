@@ -4,7 +4,7 @@ import numeral from 'numeral';
 
 import './QuickFactsBox.css'
 
-function QuickFactsBox({ countryInfo, countries }) {
+function QuickFactsBox({ countryInfo }) {
     return (
         <div className="factBox">
             <h1 className="factBox__headline">Quick Facts</h1>

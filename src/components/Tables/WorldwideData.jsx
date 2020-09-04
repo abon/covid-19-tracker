@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import numeral from 'numeral'
 import MaterialTable from 'material-table'
-
-
-
-import { sortData, prettyPrintStat } from "../../../util";
-
-
 
 function WorldwideData() {
 
     const [countries, setCountries] = useState([]);
-    const [selectedRow, setSelectedRow] = useState(null);
 
     useEffect(() => {
         const getCountriesData = async () => {
@@ -30,8 +22,6 @@ function WorldwideData() {
                     }));
 
                     setCountries(countries);
-
-
                 });
         };
 

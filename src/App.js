@@ -17,7 +17,8 @@ import Map from "./Map";
 import Table from "./Table";
 import LineGraph from "./LineGraph";
 import QuickFactsBox from "./components/QuickFactsBox/QuickFactsBox";
-import WorldwideData from "./components/Tables/WorldwideCases/WorldwideData";
+import WorldwideData from "./components/Tables/WorldwideData";
+import UzbekistanInfo from "./components/Tables/UzbData/UzbekistanData";
 import { sortData, prettyPrintStat } from "./util";
 
 // const API_URL = "https://disease.sh/v3/covid-19/countries";
@@ -88,12 +89,13 @@ function App() {
       <div className="app">
         <div className="app__left">
           <div className="app__facts">
-            <QuickFactsBox countryInfo={countryInfo} countries={countries} />
+            <QuickFactsBox countryInfo={countryInfo} />
             <h1 className="bg-white mt-3">Country List Goes here</h1>
           </div>
         </div>
         <div className="app__right">
           <WorldwideData />
+          <UzbekistanInfo />
         </div>
       </div>
     </div>
