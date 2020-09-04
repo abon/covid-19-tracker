@@ -11,12 +11,15 @@ import Typography from '@material-ui/core/Typography';
 
 import './UzbekistanData.css';
 
+const API_URL = 'https://disease.sh/v3/covid-19/countries/uzbekistan?strict=true'
+const IMG_URL = 'https://disease.sh/assets/img/flags/uz.png'
+
 function UzbekistanData() {
 
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://disease.sh/v3/covid-19/countries/uzbekistan?strict=true')
+        fetch(API_URL)
             .then(res => res.json())
             .then(data => {
                 setData(data)
@@ -27,7 +30,7 @@ function UzbekistanData() {
     return (
         <TableContainer className='table__container' component={Paper}>
             <Toolbar className='table__toolbar'>
-                <img src='https://disease.sh/assets/img/flags/uz.png' style={{ height: 20, width: 30, paddingRight: 10 }} alt="" />
+                <img src={IMG_URL} style={{ height: 20, width: 30, paddingRight: 10 }} alt="" />
                 <Typography className='toolbar__header' >
                     Uzbekistan COVID-19 Statistics
                 </Typography>
