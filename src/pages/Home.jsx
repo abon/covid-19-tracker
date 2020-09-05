@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import "../App.css";
-import "leaflet/dist/leaflet.css";
+
 
 import {
     QuickFactsBox,
@@ -30,9 +30,9 @@ import { sortData, prettyPrintStat } from "../util";
 function App() {
     const [countries, setCountries] = useState([]);
     const [country, setCountry] = useState("worldwide");
-    const [countryInfo, setCountryInfo] = useState({});
     const [tableData, setTableData] = useState([]);
     const [casesType, setCasesType] = useState("cases");
+    const [countryInfo, setCountryInfo] = useState({});
     const [mapZoom, setMapZoom] = useState(3);
     const [mapCountries, setMapCountries] = useState([]);
     const [mapCenter, setMapCenter] = useState({
@@ -40,13 +40,7 @@ function App() {
         lng: -40.4796,
     });
 
-    useEffect(() => {
-        fetch("https://disease.sh/v3/covid-19/all/")
-            .then((response) => response.json())
-            .then((data) => {
-                setCountryInfo(data);
-            });
-    }, []);
+
 
     useEffect(() => {
         const getCountriesData = async () => {
@@ -81,7 +75,6 @@ function App() {
             .then((data) => {
                 setCountryInfo(data);
                 setCountry(countryCode);
-
                 setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
                 setMapZoom(4);
             });
@@ -93,7 +86,7 @@ function App() {
             <div className="app">
                 <div className="app__left">
                     <div className="app__facts">
-                        <QuickFactsBox countryInfo={countryInfo} />
+                        <QuickFactsBox />
                         <h1 style={{ color: "#D6E0F0", fontSize: 20 }}>
                             Country List Goes here
             </h1>
