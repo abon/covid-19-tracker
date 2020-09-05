@@ -15,7 +15,7 @@ class Navbar extends Component {
         <Link className="navbar-logo" to="/data">
           {" "}
           GoC<i id="icon" className="fas fa-virus "></i>
-          rona
+          VID
         </Link>
 
         <div className="menu-icon" onClick={this.handleClick}>
