@@ -1,0 +1,11 @@
+export { default as QuickFactsBox } from "./QuickFactsBox/QuickFactsBox";
+export { default as UzbekistanData } from "./Tables/UzbData/UzbekistanData";
+export { default as AfricaData } from "./Tables/AfricaData";
+export { default as AsiaData } from "./Tables/AsiaData";
+export { default as EuropeData } from "./Tables/EuropeData";
+export { default as AustraliaData } from "./Tables/AustraliaData";
+export { default as NorthAmericaData } from "./Tables/NorthAmericaData";
+export { default as SouthAmericaData } from "./Tables/SouthAmericaData";
+export { default as USData } from "./Tables/USData";
+export { default as WorldwideData } from "./Tables/WorldwideData";
+export { default as Navbar } from "./Navbar/Navbar";

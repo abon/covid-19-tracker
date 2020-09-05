@@ -7,9 +7,7 @@ function QuickFactsBox({ countryInfo }) {
     return (
         <div className="factBox">
             <h1 className="factBox__headline">Quick Facts</h1>
-            <p className="factBox__updatedTime">updated at: </p>
-
-
+            {/* <p className="factBox__updatedTime">updated at: </p> */}
             <div className="factBox__cases">
                 <h2 className="cases__data" >{numeral(countryInfo.cases).format("0,0")}</h2>
                 <h4 className="cases">Total Cases</h4>

@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
+import './UzbData/UzbekistanData.css'
 
 const API_URL = 'https://disease.sh/v3/covid-19/continents/Africa?strict=true'
 

@@ -1,31 +1,27 @@
 import React, { useState, useEffect } from "react";
-import {
-  MenuItem,
-  FormControl,
-  Select,
-  Card,
-  CardContent,
-} from "@material-ui/core";
 
-import numeral from "numeral";
 import "./App.css";
 import "leaflet/dist/leaflet.css";
+
+import {
+  QuickFactsBox,
+  WorldwideData,
+  UzbekistanData,
+  USData,
+  AsiaData,
+  NorthAmericaData,
+  SouthAmericaData,
+  AfricaData,
+  EuropeData,
+  AustraliaData,
+  Navbar,
+} from "./components/index";
 
 // import Navbar from "./Navbar";
 import InfoBox from "./InfoBox";
 import Map from "./Map";
 import Table from "./Table";
 import LineGraph from "./LineGraph";
-import QuickFactsBox from "./components/QuickFactsBox/QuickFactsBox";
-import WorldwideData from "./components/Tables/WorldwideData";
-import UzbekistanInfo from "./components/Tables/UzbData/UzbekistanData";
-import USData from "./components/Tables/USData";
-import AsiaData from "./components/Tables/AsiaData";
-import NorthAmericaData from "./components/Tables/NorthAmericaData";
-import SouthAmericaData from "./components/Tables/SouthAmericaData";
-import AfricaData from "./components/Tables/AfricaData";
-import EuropeData from "./components/Tables/EuropeData";
-import AustraliaData from "./components/Tables/AustraliaData";
 import { sortData, prettyPrintStat } from "./util";
 
 // const API_URL = "https://disease.sh/v3/covid-19/countries";
@@ -92,7 +88,7 @@ function App() {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="app">
         <div className="app__left">
           <div className="app__facts">
@@ -104,7 +100,7 @@ function App() {
         </div>
         <div className="app__right">
           <WorldwideData />
-          <UzbekistanInfo />
+          <UzbekistanData />
           <USData />
           <AsiaData />
           <EuropeData />
