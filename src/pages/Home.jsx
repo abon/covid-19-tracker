@@ -84,9 +84,6 @@ function App() {
                 <div className="app__left">
                     <div className="app__facts">
                         <QuickFactsBox />
-                        <h1 style={{ color: "#D6E0F0", fontSize: 20 }}>
-                            Country List Goes here
-            </h1>
                     </div>
                 </div>
                 <div className="app__right">
