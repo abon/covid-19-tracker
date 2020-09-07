@@ -1,5 +1,5 @@
 import React from 'react';
-import './Wiki.css';
+import './Info.css';
 
 import introImg from '../assets/img/1.svg';
 import covidImg from '../assets/img/2.png';
@@ -7,7 +7,7 @@ import symp from '../assets/img/symp.png';
 import ill from '../assets/img/ill.png';
 import spread from '../assets/img/spread.png';
 
-function Wiki() {
+function Info() {
     return (
         <section className="wiki">
             <div className="wiki__headline">
@@ -69,4 +69,4 @@ WHO is assessing ongoing research on the ways that COVID-19 is spread and will c
     )
 }
 
-export default Wiki
+export default Info

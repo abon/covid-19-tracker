@@ -35,8 +35,8 @@ class Navbar extends Component {
             </Link>
           </li>
           <li>
-            <Link to="/wiki" className="nav-links">
-              Wiki
+            <Link to="/info" className="nav-links">
+              Info
             </Link>
           </li>
           <li>

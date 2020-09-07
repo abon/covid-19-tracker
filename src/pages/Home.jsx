@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
-
 import "../Home.css";
-
-
 import {
     QuickFactsBox,
     WorldwideData,
@@ -18,7 +14,6 @@ import {
     Navbar,
 } from "../components/index";
 
-// import Navbar from "./Navbar";
 
 import { sortData, prettyPrintStat } from "../util";
 
