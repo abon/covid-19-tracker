@@ -14,6 +14,7 @@ function App() {
         <Route path="/" component={Home} exact />
         <Route path="/data" component={Home} exact />
         <Route path="/map" component={Map} exact />
+        <Route path="/wiki" component={Wiki} exact />
       </Switch>
     </div>
   );
