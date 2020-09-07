@@ -42,45 +42,47 @@ export const showDataOnMap = (data, casesType = "cases") =>
         Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
       }
     >
-      <Popup>
-        <div className="info-container">
-          <div
-            className="info-flag"
-            style={{ backgroundImage: `url(${country.countryInfo.flag})` }}
-          ></div>
-          <div className="info-name">{country.country}</div>
-          <div className="info-confirmed">
-            Cases:
-            <span style={{ color: "#fa1616" }}>
-              {numeral(country.cases).format("0,0")}
-            </span>
-          </div>
-          <div className="info-recovered">
-            Recovered:
-            <span style={{ color: "#45BF83" }}>
-              {numeral(country.recovered).format("0,0")}
-            </span>
-          </div>
+      <div className="popup">
+        <Popup>
+          <div className="info-container">
+            <div
+              className="info-flag"
+              style={{ backgroundImage: `url(${country.countryInfo.flag})` }}
+            ></div>
+            <div className="info-name">{country.country}</div>
+            <div className="info-confirmed">
+              Cases:
+              <span style={{ color: "#fa1616" }}>
+                {numeral(country.cases).format("0,0")}
+              </span>
+            </div>
+            <div className="info-recovered">
+              Recovered:
+              <span style={{ color: "#45BF83" }}>
+                {numeral(country.recovered).format("0,0")}
+              </span>
+            </div>
 
-          <div className="info-active">
-            Active:
-            <span style={{ color: "#fddb3a" }}>
-              {numeral(country.active).format("0,0")}
-            </span>
+            <div className="info-active">
+              Active:
+              <span style={{ color: "#fddb3a" }}>
+                {numeral(country.active).format("0,0")}
+              </span>
+            </div>
+            <div className="info-critical">
+              Critical:
+              <span style={{ color: "#ff9234" }}>
+                {numeral(country.critical).format("0,0")}
+              </span>
+            </div>
+            <div className="info-deaths">
+              Deaths:
+              <span style={{ color: "#b2ebf2" }}>
+                {numeral(country.deaths).format("0,0")}
+              </span>
+            </div>
           </div>
-          <div className="info-critical">
-            Critical:
-            <span style={{ color: "#ff9234" }}>
-              {numeral(country.critical).format("0,0")}
-            </span>
-          </div>
-          <div className="info-deaths">
-            Deaths:
-            <span style={{ color: "#b2ebf2" }}>
-              {numeral(country.deaths).format("0,0")}
-            </span>
-          </div>
-        </div>
-      </Popup>
+        </Popup>
+      </div>
     </Circle>
   ));

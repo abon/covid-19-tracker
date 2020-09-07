@@ -29,7 +29,6 @@ function Map() {
 
     const onCountryChange = async (event) => {
         const countryCode = event.target.value;
-        // setCountry(countryCode);
 
         const url =
             countryCode === "worldwide"
