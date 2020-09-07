@@ -4,15 +4,15 @@ import { Circle, Popup } from "react-leaflet";
 
 const casesTypeColors = {
   cases: {
-    hex: "#CC1034",
+    hex: "#d72323",
     multiplier: 800,
   },
   recovered: {
-    hex: "#7dd71d",
+    hex: "#2eb872",
     multiplier: 1200,
   },
   deaths: {
-    hex: "#fb4443",
+    hex: "#fbf0f0",
     multiplier: 2000,
   },
 };
@@ -38,7 +38,6 @@ export const showDataOnMap = (data, casesType = "cases") =>
       center={[country.countryInfo.lat, country.countryInfo.long]}
       color={casesTypeColors[casesType].hex}
       fillColor={casesTypeColors[casesType].hex}
-      fillOpacity={0.4}
       radius={
         Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
       }
@@ -50,35 +49,36 @@ export const showDataOnMap = (data, casesType = "cases") =>
             style={{ backgroundImage: `url(${country.countryInfo.flag})` }}
           ></div>
           <div className="info-name">{country.country}</div>
-          <div
-            className="info-confirmed"
-            style={{
-              color: "#251f44",
-              fontFamily: "arial",
-            }}
-          >
-            <span style={{ color: "#F8615A" }}>Cases:</span>{" "}
-            {numeral(country.cases).format("0,0")}
+          <div className="info-confirmed">
+            Cases:
+            <span style={{ color: "#fa1616" }}>
+              {numeral(country.cases).format("0,0")}
+            </span>
           </div>
-          <div
-            className="info-recovered"
-            style={{
-              color: "#251f44",
-              fontFamily: "arial",
-            }}
-          >
-            <span style={{ color: "#45BF83" }}>Recovered:</span>
-            {numeral(country.recovered).format("0,0")}
+          <div className="info-recovered">
+            Recovered:
+            <span style={{ color: "#45BF83" }}>
+              {numeral(country.recovered).format("0,0")}
+            </span>
           </div>
-          <div
-            className="info-deaths"
-            style={{
-              color: "#251f44",
-              fontFamily: "arial",
-            }}
-          >
-            <span style={{ color: "#fa7d09" }}>Deaths:</span>{" "}
-            {numeral(country.deaths).format("0,0")}
+
+          <div className="info-active">
+            Active:
+            <span style={{ color: "#fddb3a" }}>
+              {numeral(country.active).format("0,0")}
+            </span>
+          </div>
+          <div className="info-critical">
+            Critical:
+            <span style={{ color: "#ff9234" }}>
+              {numeral(country.critical).format("0,0")}
+            </span>
+          </div>
+          <div className="info-deaths">
+            Deaths:
+            <span style={{ color: "#b2ebf2" }}>
+              {numeral(country.deaths).format("0,0")}
+            </span>
           </div>
         </div>
       </Popup>

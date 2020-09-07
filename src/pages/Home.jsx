@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 
-import "../App.css";
+import "../Home.css";
 
 
 import {
@@ -19,10 +19,7 @@ import {
 } from "../components/index";
 
 // import Navbar from "./Navbar";
-import InfoBox from "../InfoBox";
-import Map from "../Map";
-import Table from "../Table";
-import LineGraph from "../LineGraph";
+
 import { sortData, prettyPrintStat } from "../util";
 
 // const API_URL = "https://disease.sh/v3/covid-19/countries";

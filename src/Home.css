@@ -15,8 +15,6 @@ body {
 
 .app__left {
   flex: 0.1;
-  display: flex;
-  margin-left: 10px;
 }
 
 .app__right {
