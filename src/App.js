@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import { Home, About, Map, Vaccine, Wiki } from "./pages/index";
-import { Navbar, QuickFactsBox } from "./components/index";
+import { Navbar } from "./components/index";
 
 import "./App.css";
 
