@@ -7,7 +7,7 @@
   font-weight: lighter;
 }
 
-.wiki__headline {
+.info__headline {
   display: flex;
   font-size: 25px;
   margin-bottom: 80px;
@@ -15,12 +15,8 @@
   justify-content: center;
 }
 
-.headline__text {
-  margin-left: 15px;
-}
-
-.intro__detail {
-  font-size: 20px;
+.info__detail {
+  font-size: 18px;
   line-height: 50px;
   margin: 30px;
   margin-top: 30px;
@@ -29,13 +25,6 @@
 .intro__img {
   width: 35%;
   float: left;
-}
-
-.covid__text {
-  font-size: 20px;
-  margin: 60px;
-  line-height: 50px;
-  margin-left: 20px;
 }
 
 .virus__images {
@@ -51,25 +40,11 @@
   margin-top: -100px;
 }
 
-.symp__detail {
-  font-size: 18px;
-  margin: 30px;
-  line-height: 40px;
-  margin-left: 20px;
-}
-
 .symp__img {
   float: left;
   width: 25%;
   height: 30%;
   margin-top: -50px;
-}
-
-.ill__detail {
-  font-size: 18px;
-  margin: 30px;
-  line-height: 40px;
-  margin-left: 20px;
 }
 
 .ill__img {
@@ -84,13 +59,6 @@
   margin-top: 50px;
   justify-content: center;
   align-items: center;
-}
-
-.spread__detail {
-  font-size: 18px;
-  margin: 30px;
-  line-height: 40px;
-  margin-left: 20px;
 }
 
 .spread__img {
