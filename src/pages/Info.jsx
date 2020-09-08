@@ -14,13 +14,13 @@ import plus from '../assets/img/plus.png';
 function Info() {
 
     return (
-        <section className="wiki">
+        <section className="info">
             <div className="wiki__headline">
                 <svg className='plus' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64"><path fill="none" d="M0 0H24V24H0z" /><path d="M20 2c.552 0 1 .448 1 1v18c0 .552-.448 1-1 1H6c-.552 0-1-.448-1-1v-2H3v-2h2v-2H3v-2h2v-2H3V9h2V7H3V5h2V3c0-.552.448-1 1-1h14zm-6 6h-2v3H9v2h2.999L12 16h2l-.001-3H17v-2h-3V8z" fill="rgba(236,1,1,1)" /></svg>
                 <h1 className='headline__text'>Coronavirus Information Center</h1>
             </div>
 
-            <div className="wiki__intro">
+            <div className="question">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z" /><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-7v2h2v-2h-2zm2-1.645A3.502 3.502 0 0 0 12 6.5a3.501 3.501 0 0 0-3.433 2.813l1.962.393A1.5 1.5 0 1 1 12 11.5a1 1 0 0 0-1 1V14h2v-.645z" fill="rgba(19,59,92,1)" /></svg>
                 <h1>What is the Coronavirus ?</h1>
             </div>
@@ -29,7 +29,7 @@ function Info() {
                 <p><strong style={{ marginLeft: 50 }}> Coronaviruses</strong>  are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</p>
             </div>
 
-            <div className="wiki__covid">
+            <div className="question">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0H24V24H0z" /><path d="M13.717 1.947l3.734 1.434-.717 1.867-.934-.359-.746 1.945c.779.462 1.444 1.094 1.945 1.846l1.903-.847-.407-.914 1.827-.813 1.627 3.654-1.827.813-.407-.913-1.902.847c.122.477.187.978.187 1.493 0 .406-.04.803-.117 1.187l1.944.746.358-.933 1.868.717-1.434 3.734-1.867-.717.358-.933-1.944-.747c-.462.779-1.094 1.444-1.846 1.945l.847 1.903.914-.407.813 1.827-3.654 1.627-.813-1.827.913-.407-.847-1.902c-.477.122-.978.187-1.493.187-.407 0-.804-.04-1.188-.118l-.746 1.945.934.358-.717 1.868-3.734-1.434.717-1.867.932.358.748-1.944C8.167 16.704 7.502 16.072 7 15.32l-1.903.847.407.914-1.827.813-1.627-3.654 1.827-.813.406.914 1.903-.848C6.065 13.016 6 12.515 6 12c0-.406.04-.803.117-1.187l-1.945-.746-.357.933-1.868-.717L3.381 6.55l1.867.717-.359.933 1.945.747C7.296 8.167 7.928 7.502 8.68 7l-.847-1.903-.914.407-.813-1.827L9.76 2.051l.813 1.827-.913.407.847 1.902C10.984 6.065 11.485 6 12 6c.406 0 .803.04 1.187.117l.745-1.945L13 3.815l.717-1.868zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-.5 4.866c.478.276.642.888.366 1.366-.276.478-.888.642-1.366.366-.478-.276-.642-.888-.366-1.366.276-.478.888-.642 1.366-.366zM14 11c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-2.134-1.232c.276.478.112 1.09-.366 1.366s-1.09.112-1.366-.366-.112-1.09.366-1.366 1.09-.112 1.366.366z" fill="rgba(22,36,71,1)" /></svg>
                 <h1>What is COVID-19 ?</h1>
             </div>
@@ -37,7 +37,7 @@ function Info() {
                 <img className="covid__img" src={covidImg} alt="" />
                 <p className='covid__text'> <strong style={{ marginLeft: 50 }}>COVID-19</strong>  is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</p>
             </div>
-            <div className="wiki__covid">
+            <div className="question">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0H24V24H0z" /><path d="M13.196 2.268l3.25 5.63c.276.477.112 1.089-.366 1.365l-1.3.75 1.001 1.732-1.732 1-1-1.733-1.299.751c-.478.276-1.09.112-1.366-.366L8.546 8.215C6.494 8.837 5 10.745 5 13c0 .625.115 1.224.324 1.776C6.1 14.284 7.016 14 8 14c1.684 0 3.174.833 4.08 2.109l7.688-4.439 1 1.732-7.878 4.549c.072.338.11.69.11 1.049 0 .343-.034.677-.1 1H21v2l-17 .001c-.628-.836-1-1.875-1-3.001 0-1.007.298-1.945.81-2.73C3.293 15.295 3 14.182 3 13c0-2.995 1.881-5.551 4.527-6.55l-.393-.682c-.552-.957-.225-2.18.732-2.732l2.598-1.5c.957-.552 2.18-.225 2.732.732z" fill="rgba(22,36,71,1)" /></svg>
                 <h1>What does it look like?</h1>
             </div>
@@ -50,7 +50,7 @@ function Info() {
             </div>
 
 
-            <div className="symp">
+            <div className="question">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0H24V24H0z" /><path d="M8.5 5.5c1.412.47 2.048 2.159 2.327 4.023l-4.523 2.611 1 1.732 3.71-2.141C11.06 13.079 11 14.308 11 15c0 3-1 6-5 6s-4 0-4-4C2 9.5 5.5 4.5 8.5 5.5zM22.001 17v.436c-.005 3.564-.15 3.564-4 3.564-4 0-5-3-5-6 0-.691-.06-1.92-.014-3.274l3.71 2.14 1-1.732-4.523-2.61c.279-1.865.915-3.553 2.327-4.024 3-1 6.5 4 6.5 11.5zM13 2v9h-2V2h2z" fill="rgba(22,36,71,1)" /></svg>
                 <h1>What are the symptoms of COVID-19?</h1>
             </div>
@@ -60,7 +60,7 @@ function Info() {
 <br /><br />
 Most people (about 80%) recover from the disease without needing hospital treatment. Around 1 out of every 5 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, or cancer, are at higher risk of developing serious illness.  However, anyone can catch COVID-19 and become seriously ill.  People of all ages who experience fever and/or  cough associated withdifficulty breathing/shortness of breath, chest pain/pressure, or loss of speech or movement should seek medical attention immediately. If possible, it is recommended to call the health care provider or facility first, so the patient can be directed to the right clinic.</p>
             </div>
-            <div className="ill__covid">
+            <div className="question">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0H24V24H0z" /><path d="M16 1c.552 0 1 .448 1 1v3h4c.552 0 1 .448 1 1v14c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V6c0-.552.448-1 1-1h4V2c0-.552.448-1 1-1h8zm4 6H4v12h16V7zm-7 2v3h3v2h-3.001L13 17h-2l-.001-3H8v-2h3V9h2zm2-6H9v2h6V3z" fill="rgba(22,36,71,1)" /></svg>
                 <h1 style={{ textAlign: 'center', marginLeft: 10, fontSize: 25, }}>What should I do if I have COVID-19 symptoms and <br /> when should I seek medical care?</h1>
             </div>

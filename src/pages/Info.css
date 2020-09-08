@@ -1,4 +1,4 @@
-.wiki {
+.info {
   margin: 20px;
   border-radius: 12px;
   color: #162447;
@@ -19,13 +19,6 @@
   margin-left: 15px;
 }
 
-.wiki__intro {
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
 .intro__detail {
   font-size: 20px;
   line-height: 50px;
@@ -36,13 +29,6 @@
 .intro__img {
   width: 35%;
   float: left;
-}
-
-.wiki__covid {
-  display: flex;
-  margin-top: 80px;
-  justify-content: center;
-  align-items: center;
 }
 
 .covid__text {
@@ -65,13 +51,6 @@
   margin-top: -100px;
 }
 
-.symp {
-  display: flex;
-  margin-top: 80px;
-  justify-content: center;
-  align-items: center;
-}
-
 .symp__detail {
   font-size: 18px;
   margin: 30px;
@@ -84,13 +63,6 @@
   width: 25%;
   height: 30%;
   margin-top: -50px;
-}
-
-.ill__covid {
-  display: flex;
-  margin-top: 50px;
-  justify-content: center;
-  align-items: center;
 }
 
 .ill__detail {
