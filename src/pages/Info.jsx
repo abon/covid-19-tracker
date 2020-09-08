@@ -91,7 +91,7 @@ WHO is assessing ongoing research on the ways that COVID-19 is spread and will c
                 <QA />
                 <img src={plus} style={{ width: 400, }} alt="" />
             </div>
-            <p style={{ margin: 15 }}>Source: <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms">WHO</a></p>
+            <p style={{ margin: 15 }}>Source: <a target='_blank' rel="noopener noreferrer" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms">WHO</a></p>
 
         </section>
     )

@@ -25,7 +25,7 @@ export default function SimpleAccordion() {
 <br /><br />
                         Some reports have indicated that people with no symptoms can transmit the virus. It is not yet known how often it happens. WHO is assessing ongoing research on the topic and will continue to share updated findings.
 <br /><br />
-                        <a href="https://www.youtube.com/watch?v=677pSwGauqs">Video: Five things to know about COVID-19 transmission</a>
+                        <a target='_blank' rel="noopener noreferrer" href="https://www.youtube.com/watch?v=677pSwGauqs">Video: Five things to know about COVID-19 transmission</a>
                     </p>
                 </AccordionDetails>
             </Accordion>
@@ -75,7 +75,7 @@ Minks raised in farms have also been detected with the virus. Most likely, they 
 <br /><br />
 It is still recommended that people who are sick with COVID-19 and people who are at risk limit contact with companion and other animals. When handling and caring for animals, basic hygiene measures should always be implemented. This includes hand washing after handling animals, their food or supplies, as well as avoiding kissing, licking or sharing food.
 <br /><br />
-More recommendations are available on the <a href=" https://www.oie.int/en/scientific-expertise/specific-information-and-recommendations/questions-and-answers-on-2019novel-coronavirus/">OIE website:</a>
+More recommendations are available on the <a target='_blank' rel="noopener noreferrer" href=" https://www.oie.int/en/scientific-expertise/specific-information-and-recommendations/questions-and-answers-on-2019novel-coronavirus/">OIE website:</a>
                         <br /><br />
 WHO continues to monitor the latest research on this and other COVID-19 topics and will update as new findings are available.
                     </p>
