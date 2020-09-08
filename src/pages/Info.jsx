@@ -1,13 +1,18 @@
 import React from 'react';
 import './Info.css';
+import { QA } from '../components/index'
 
 import introImg from '../assets/img/1.svg';
 import covidImg from '../assets/img/2.png';
 import symp from '../assets/img/symp.png';
 import ill from '../assets/img/ill.png';
 import spread from '../assets/img/spread.png';
+import v1 from '../assets/img/v1.jpg';
+import v2 from '../assets/img/v2.png';
+import plus from '../assets/img/plus.png';
 
 function Info() {
+
     return (
         <section className="wiki">
             <div className="wiki__headline">
@@ -32,8 +37,21 @@ function Info() {
                 <img className="covid__img" src={covidImg} alt="" />
                 <p className='covid__text'> <strong style={{ marginLeft: 50 }}>COVID-19</strong>  is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</p>
             </div>
-            <div className="symp">
+            <div className="wiki__covid">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0H24V24H0z" /><path d="M13.196 2.268l3.25 5.63c.276.477.112 1.089-.366 1.365l-1.3.75 1.001 1.732-1.732 1-1-1.733-1.299.751c-.478.276-1.09.112-1.366-.366L8.546 8.215C6.494 8.837 5 10.745 5 13c0 .625.115 1.224.324 1.776C6.1 14.284 7.016 14 8 14c1.684 0 3.174.833 4.08 2.109l7.688-4.439 1 1.732-7.878 4.549c.072.338.11.69.11 1.049 0 .343-.034.677-.1 1H21v2l-17 .001c-.628-.836-1-1.875-1-3.001 0-1.007.298-1.945.81-2.73C3.293 15.295 3 14.182 3 13c0-2.995 1.881-5.551 4.527-6.55l-.393-.682c-.552-.957-.225-2.18.732-2.732l2.598-1.5c.957-.552 2.18-.225 2.732.732z" fill="rgba(22,36,71,1)" /></svg>
+                <h1>What does it look like?</h1>
+            </div>
+            <div className='image'>
+                <p style={{ textAlign: 'center', marginTop: 10 }}>These images are colorized and from electron microscropes</p>
+                <div className="virus__images">
+                    <img src={v1} style={{ width: 500 }} alt="" />
+                    <img src={v2} style={{ width: 500 }} alt="" />
+                </div>
+            </div>
+
+
+            <div className="symp">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0H24V24H0z" /><path d="M8.5 5.5c1.412.47 2.048 2.159 2.327 4.023l-4.523 2.611 1 1.732 3.71-2.141C11.06 13.079 11 14.308 11 15c0 3-1 6-5 6s-4 0-4-4C2 9.5 5.5 4.5 8.5 5.5zM22.001 17v.436c-.005 3.564-.15 3.564-4 3.564-4 0-5-3-5-6 0-.691-.06-1.92-.014-3.274l3.71 2.14 1-1.732-4.523-2.61c.279-1.865.915-3.553 2.327-4.024 3-1 6.5 4 6.5 11.5zM13 2v9h-2V2h2z" fill="rgba(22,36,71,1)" /></svg>
                 <h1>What are the symptoms of COVID-19?</h1>
             </div>
             <div className="symp__detail">
@@ -54,7 +72,7 @@ However, if you live in an area with malaria or dengue fever it is important tha
 
 Seek immediate medical care if you have difficulty breathing or pain/pressure in the chest. If possible, call your health care provider in advance, so he/she can direct you to the right health facility.</p>
             </div>
-            <div className="spread__covid">
+            <div className="question">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z" /><path d="M6.235 6.453a8 8 0 0 0 8.817 12.944c.115-.75-.137-1.47-.24-1.722-.23-.56-.988-1.517-2.253-2.844-.338-.355-.316-.628-.195-1.437l.013-.091c.082-.554.22-.882 2.085-1.178.948-.15 1.197.228 1.542.753l.116.172c.328.48.571.59.938.756.165.075.37.17.645.325.652.373.652.794.652 1.716v.105c0 .391-.038.735-.098 1.034a8.002 8.002 0 0 0-3.105-12.341c-.553.373-1.312.902-1.577 1.265-.135.185-.327 1.132-.95 1.21-.162.02-.381.006-.613-.009-.622-.04-1.472-.095-1.744.644-.173.468-.203 1.74.356 2.4.09.105.107.3.046.519-.08.287-.241.462-.292.498-.096-.056-.288-.279-.419-.43-.313-.365-.705-.82-1.211-.96-.184-.051-.386-.093-.583-.135-.549-.115-1.17-.246-1.315-.554-.106-.226-.105-.537-.105-.865 0-.417 0-.888-.204-1.345a1.276 1.276 0 0 0-.306-.43zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" fill="rgba(22,36,71,1)" /></svg>
                 <h1 >How does COVID-19 spread?</h1>
             </div>
@@ -64,6 +82,16 @@ Seek immediate medical care if you have difficulty breathing or pain/pressure in
 
 WHO is assessing ongoing research on the ways that COVID-19 is spread and will continue to share updated findings.    </p>
             </div>
+            <div className="question">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z" /><path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zM7 4H5v16h14V4h-5v9l-3.5-2L7 13V4z" fill="rgba(22,36,71,1)" /></svg>
+                <h1 >Other Q&A on coronaviruses</h1>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+
+                <QA />
+                <img src={plus} style={{ width: 400, }} alt="" />
+            </div>
+            <p style={{ margin: 15 }}>Source: <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms">WHO</a></p>
 
         </section>
     )

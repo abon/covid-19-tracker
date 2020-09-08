@@ -9,3 +9,4 @@ export { default as SouthAmericaData } from "./Tables/SouthAmericaData";
 export { default as USData } from "./Tables/USData";
 export { default as WorldwideData } from "./Tables/WorldwideData";
 export { default as Navbar } from "./Navbar/Navbar";
+export { default as QA } from "./QA/Q&A";

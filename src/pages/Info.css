@@ -4,6 +4,7 @@
   color: #162447;
   background-color: #f4f6ff;
   font-family: "Poppins", sans-serif;
+  font-weight: lighter;
 }
 
 .wiki__headline {
@@ -35,7 +36,6 @@
 .intro__img {
   width: 35%;
   float: left;
-  margin-top: -50px;
 }
 
 .wiki__covid {
@@ -50,6 +50,13 @@
   margin: 60px;
   line-height: 50px;
   margin-left: 20px;
+}
+
+.virus__images {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
 }
 
 .covid__img {
@@ -100,7 +107,7 @@
   margin-top: -50px;
 }
 
-.spread__covid {
+.question {
   display: flex;
   margin-top: 50px;
   justify-content: center;
