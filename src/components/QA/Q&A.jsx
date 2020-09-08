@@ -73,7 +73,7 @@ As, always clean your hands with an alcohol-based hand rub or wash them with soa
                     <br /><br />
 Minks raised in farms have also been detected with the virus. Most likely, they have been infected by farm workers. In a few instances, the minks that were infected by humans have transmitted the virus to other people. These are the first reported cases of animal-to-human transmission.
 <br /><br />
-It is still recommended that people who are sick with COVID-19 and people who are at risk limit contact with companion and other animals. When handling and caring for animals, basic hygiene measures should always be implemented. This includes hand washing after handling animals, their food or supplies, as well as avoiding kissing, licking or sharing food.
+It is still recommended that people who are infected with COVID-19 and people who are at risk limit contact with companion and other animals. When handling and caring for animals, basic hygiene measures should always be implemented. This includes hand washing after handling animals, their food or supplies, as well as avoiding kissing, licking or sharing food.
 <br /><br />
 More recommendations are available on the <a target='_blank' rel="noopener noreferrer" href=" https://www.oie.int/en/scientific-expertise/specific-information-and-recommendations/questions-and-answers-on-2019novel-coronavirus/">OIE website:</a>
                         <br /><br />
