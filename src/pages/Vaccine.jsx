@@ -30,7 +30,7 @@ function Vaccine() {
             <MaterialTable
 
                 style={{ backgroundColor: '#f4f6ff', color: "#27496d", borderRadius: '8px' }}
-                title="COVID-19 Vaccines in development"
+                title="Coronavirus Vaccines in development"
                 columns={[
                     {
                         title: 'Candidate', field: 'candidate',
