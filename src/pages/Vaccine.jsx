@@ -148,6 +148,8 @@ function Vaccine() {
                 ]}
 
                 data={vacData}
+
+
             />
         </div>
     )
