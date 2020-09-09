@@ -18,7 +18,10 @@ function QuickFactsBox() {
 
     return (
         <div className="factBox">
-            <h1 className="factBox__headline">Quick Facts</h1>
+            <div className="factBox__headline">
+                Quick Facts
+                <span class="pulse "></span>
+            </div>
             <p className="factBox__updatedTime">updates every 10 mins </p>
             <div className="factBox__cases">
                 <h2 className="cases__data" >{numeral(countryInfo.cases).format("0,0")}</h2>

@@ -13,8 +13,9 @@
 .factBox__headline {
   text-align: center;
   padding-top: 10px;
+  display: flex;
   color: #325879;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -124,4 +125,45 @@
   margin-top: -5px;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*PULSE ANIMATION*/
+.pulse {
+  display: block;
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f81212;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(241, 12, 12, 0.4);
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 44, 44, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(253, 53, 17, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(250, 16, 16, 0.4);
+    box-shadow: 0 0 0 0 rgba(243, 16, 16, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(241, 22, 22, 0);
+    box-shadow: 0 0 0 10px rgba(235, 8, 8, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(231, 32, 25, 0);
+    box-shadow: 0 0 0 0 rgba(252, 4, 4, 0);
+  }
 }
