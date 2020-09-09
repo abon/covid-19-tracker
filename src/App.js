@@ -15,6 +15,7 @@ function App() {
         <Route path="/data" component={Home} exact />
         <Route path="/map" component={Map} exact />
         <Route path="/info" component={Info} exact />
+        <Route path="/vaccine" component={Vaccine} exact />
       </Switch>
     </div>
   );
