@@ -148,16 +148,6 @@ function Vaccine() {
                 ]}
 
                 data={vacData}
-                options={{
-                    rowStyle: x => {
-                        if (x.tableData.id % 2) {
-                            return { backgroundColor: "#F4F6FF" }
-                        } else {
-                            return { backgroundColor: "#EBF0F6" }
-                        }
-                    }
-                }}
-
             />
         </div>
     )
