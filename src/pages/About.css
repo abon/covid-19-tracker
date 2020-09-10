@@ -1,0 +1,68 @@
+.about {
+  margin: 20px;
+  border-radius: 12px;
+  color: #162447;
+  font-size: 20px;
+  background-color: #f4f6ff;
+  font-family: "Poppins", sans-serif;
+}
+
+.about__question {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text__question {
+  margin-left: 10px;
+}
+
+.about__links {
+  margin-top: 30px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.sources {
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+a {
+  color: #162447;
+}
+
+.twitter {
+  background-color: #00acee;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 3px;
+  border-radius: 6px;
+  color: #f4f6ff;
+}
+
+.linkedin {
+  background-color: #07689f;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 3px;
+  border-radius: 6px;
+  color: #f4f6ff;
+}
+
+.svg {
+  align-items: center;
+  margin-top: 3px;
+}
+
+.github {
+  background-color: #211f1f;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 3px;
+  border-radius: 6px;
+  color: #f4f6ff;
+  align-items: center;
+}
