@@ -32,11 +32,11 @@ function About() {
 
             <div className='about__links'>
                 <ul className='sources'>
-                    <li><a href="https://www.worldometers.info/">Worldometers</a> </li>
-                    <li><a href="https://coronavirus.jhu.edu/us-map">Johns Hopkins University</a> </li>
-                    <li><a href="https://www.raps.org/">Regulatory Affairs Professional Society</a> </li>
-                    <li><a href="https://disease.sh/">Open Disease Data</a> </li>
-                    <li><a href="https://ncov2019.live/data">Coronavirus Dashboard</a> </li>
+                    <li><a target="_blank" without rel="noopener noreferrer" href="https://www.worldometers.info/">Worldometers</a> </li>
+                    <li><a target="_blank" without rel="noopener noreferrer" href="https://coronavirus.jhu.edu/us-map">Johns Hopkins University</a> </li>
+                    <li><a target="_blank" without rel="noopener noreferrer" href="https://www.raps.org/">Regulatory Affairs Professional Society</a> </li>
+                    <li><a target="_blank" without rel="noopener noreferrer" href="https://disease.sh/">Open Disease Data</a> </li>
+                    <li><a target="_blank" without rel="noopener noreferrer" href="https://ncov2019.live/data">Coronavirus Dashboard</a> </li>
 
                 </ul>
             </div>
